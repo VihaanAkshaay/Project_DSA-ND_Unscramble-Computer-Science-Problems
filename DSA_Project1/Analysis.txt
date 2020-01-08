@@ -1,0 +1,36 @@
+﻿Worst Case Big O Notation
+
+
+Task-0:
+Since there is a loop where call runs through calls with n entries, and there are 4 lines outside the loop,
+
+Here the big O notation would be O(n + 4)
+
+
+Task-1:
+Assuming texts and calls have n entries in them and assuming unique_list takes in all n entries, since we are calculating worst case here, the number of lines we run for the first text in texts loop is n*(n*2 + n*2) where the n outside it for the text going term by term in texts, and the n’s inside is for text not in unique_list where in the worst case we go through all n terms of the list and 2 because we have two lines for every search. A similar n*(n*2 + n*2) for call in calls. Outside we have 3 lines where we initialise variables and print the required result.
+
+Here the big O notation would be O(8n^2 + 3)
+
+
+Task-2:
+Similar to the above description, the call in calls loop has n*(n+n). The item in call_durations iteration gives n and key in dict gives n as well. So this sums to 2n. Outside we have 4 lines of code.
+
+
+Here the big O notation would be O(2n^2 + 2n + 4)
+
+
+Task-3:
+Just looking at the call in calls iteration, the number of lines executed would be n*(2+2+5+2+2)
+Here the 2s are fixed lines of code assuming the worst case and 5 is the maximum number of numbers between the brackets in the given dataset. The code.sort() would require n and code in codes loop will require n. There are 5 fixed lines in the program other than the loops.
+
+
+Here the big O notation would be O(15n+5)
+
+
+Task-4:
+Call in calls would require n*n as there is another checking loop inside.
+Text is texts would require n*(n+n), very similar to a case in task-1.
+The call in calls that comes later would require n*(n+n) becuase it searches in two lists inside the loop. The sort takes up another n and for printing all items we have a loop through n items so there an n again. There are 3 lines outside all the loops
+
+Here the big O notation would be O(5n^2 + n +3)
