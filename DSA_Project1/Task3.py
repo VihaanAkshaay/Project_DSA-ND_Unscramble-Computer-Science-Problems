@@ -51,15 +51,17 @@ count2 = 0
 for call in calls:
   if call[0][0:5]=='(080)':
     count1 += 1
+    code = ''
     if call[1][0] == '(':
-      code = ''
       for char in call[1]:
           code += char
           if char == ')':
             break
       if code == '(080)':
         count2 += 1
-      if code not in codes:
+    elif call[1][0] == '7' or call[1][0] == '8' or call[1][0] == '9':
+      code += call[1][0:4]  
+    if code not in codes:
         codes.append(code)
 
 print('The numbers called by people in Bangalore have codes:')
