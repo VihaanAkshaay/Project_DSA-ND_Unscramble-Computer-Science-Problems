@@ -22,15 +22,15 @@ Here the big O notation would be O(2n^2 + 2n + 4)
 
 Task-3:
 Just looking at the call in calls iteration, the number of lines executed would be n*(2+2+5+2+2)
-Here the 2s are fixed lines of code assuming the worst case and 5 is the maximum number of numbers between the brackets in the given dataset. The code.sort() would require n and code in codes loop will require n. There are 5 fixed lines in the program other than the loops.
+Here the 2s are fixed lines of code assuming the worst case and 5 is the maximum number of numbers between the brackets in the given dataset. The code.sort() would require nlogn and code in codes loop will require n. There are 5 fixed lines in the program other than the loops.
 
 
-Here the big O notation would be O(15n+5)
+Here the big O notation would be O(14n + nlogn + 5)
 
 
 Task-4:
 Call in calls would require n*n as there is another checking loop inside.
 Text is texts would require n*(n+n), very similar to a case in task-1.
-The call in calls that comes later would require n*(n+n) becuase it searches in two lists inside the loop. The sort takes up another n and for printing all items we have a loop through n items so there an n again. There are 3 lines outside all the loops
+The call in calls that comes later would require n*(n+n) becuase it searches in two lists inside the loop. The sort takes up another nlogn and for printing all items we have a loop through n items so there an n again. There are 3 lines outside all the loops
 
-Here the big O notation would be O(5n^2 + n +3)
+Here the big O notation would be O(5n^2 + nlogn +n +3)
